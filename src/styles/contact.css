@@ -1,0 +1,181 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #030321;
+    font-family: 'Times New Roman', Times, serif;
+    overflow: hidden;
+    
+}
+
+.container {
+    display: absolute;
+  /*   border:1px solid red; */
+    height: 100%;
+    align-items: center;
+    margin-top: -4%;
+  }
+  
+  svg {
+      display: block;
+      font: 10.5em 'Montserrat';
+      width: 960px;
+      height: 300px;
+      margin: 0 auto;
+  }
+  
+  .text-copy {
+      fill: none;
+      stroke: white;
+      stroke-dasharray: 6% 29%;
+      stroke-width: 5px;
+      stroke-dashoffset: 0%;
+      animation: stroke-offset 5.5s infinite linear;
+  }
+  
+  .text-copy:nth-child(1){
+      stroke: #fbff00;
+      animation-delay: -1;
+  }
+  
+  .text-copy:nth-child(2){
+      stroke: #840000;
+      animation-delay: -2s;
+  }
+  
+  .text-copy:nth-child(3){
+      stroke: #001d7d;
+      animation-delay: -3s;
+  }
+  
+  .text-copy:nth-child(4){
+      stroke: #BD0034;
+      animation-delay: -4s;
+  }
+  
+  .text-copy:nth-child(5){
+      stroke: #313bfd;
+      animation-delay: -5s;
+  }
+  
+  @keyframes stroke-offset{
+      100% {stroke-dashoffset: -35%;}
+  }
+
+.menuContainer{
+    background-color: transparent;
+    width: fit-content;
+    margin: auto;
+}
+.menuItem{
+    background-color: transparent;
+    display: inline-block;
+    padding: 10px 5px 10px 0px;
+    align-items: center;
+}
+
+.menuLink{
+    position:relative;
+    bottom: -30px;
+    left: 30px;
+    background-color: #690004b1;
+    border-radius: 2em;
+    color: white;
+    text-transform: uppercase;
+    padding: 1em 1.5em;
+    font-weight: bold;
+
+}
+
+.menuLink:hover{
+    background-color: transparent;
+    border: 3px dashed rgb(133, 0, 0);
+    color: rgba(179, 115, 10, 0.866);
+    transform: scale(1.4);
+    cursor:pointer;
+    transition: 0.65s;
+    transition-delay: 1s;
+    position: 0 15;
+    -webkit-transition-delay: 11ms;
+    
+}
+
+.menuLink:active{
+    color: bisque;
+    font-family: monospace;
+        
+}
+
+.menuText{
+    font-family: sans-serif;
+    position: absolute;
+    bottom: 2em;
+    right:5em;
+    left: 5em;
+    background-color:#3c15165c;
+    border-radius:2em;
+    color:rgb(206, 199, 199);
+    padding:1em 1.5em;
+    font-weight: bold;
+    -webkit-transform-style: calc(15);
+    
+}
+
+.menuText:hover{
+    background-color: transparent;
+    border: 3px dashed rgb(133, 0, 0);
+    color: rgb(255, 255, 255);
+    transform: scale(1.1);
+    cursor:pointer;
+    transition: 0.6s;
+    -webkit-transition-delay: 11ms;
+    
+}
+.menuText:active{
+    color: bisque;
+    font-family: monospace;
+    transition: 1s;
+}
+
+.form{
+    width: fit-content;
+    margin: 7em 12em;
+   
+}
+.itemForm{
+    margin: 15px 0px;
+    width: 100%;
+    
+}
+
+.itemForm label {
+
+    height: 25px;
+    display: block;
+    margin-bottom: 5px;
+    color: rgb(183, 131, 47);
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+
+}
+.itemForm input, .itemForm textarea {
+    background-color: rgba(133, 222, 225, 0.498);
+    padding: 10px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.itemForm textarea{
+    resize: vertical;
+}
+
+.itemForm input:hover{
+    background-color: rgb(168, 92, 0);
+}
